@@ -1,0 +1,35 @@
+package day18_whilw_doWhileLoop;
+
+public class C09_DOwhileLoop {
+    public static void main(String[] args) {
+        /*
+kullanicidan toplamak icin sayi isteyin toplauin
+ve toplam 500 e ulasinca veya gecince bitirelim
+
+ */
+        int sayi=123194181;
+        int toplam=0;
+        int sayac=0;
+        while (sayi>0){
+            toplam+=sayi%10;
+            sayi/=10;
+            sayac++;//basamak sayisini bulmak icin koyuldu!!
+        }
+        System.out.println("girilen sayi basamak sayisi = " + sayac);
+        System.out.println("Girilen Sayi Rakamlari toplami = " + toplam);
+        sayi=1234;
+        toplam=0;
+        sayac=0;
+        do {
+            toplam+=sayi%10;
+            sayi/=10;
+            sayac++;
+        }while (sayi>0);
+        System.out.println("girilen sayi basamak sayisi = " + sayac);
+        System.out.println("Girilen Sayi Rakamlari toplami = " + toplam);
+
+
+
+
+    }
+}
